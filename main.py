@@ -21,7 +21,7 @@ school_schedule = [
 ]
 
 
-# for문 돌릴 필요없이 조건 일치하면 바로 반환하게 수정함(속도 평균 6배 빨라짐)
+# for문 돌릴 필요없이 조건 일치하면 바로 반환하게 수정함(최적화)
 def get_current_school_period(schedule):
     # 현재 시간 구하기
     now = datetime.now().time()
@@ -70,7 +70,7 @@ text_subject.tag_config("center", justify="center")
 text_subject.insert("0.0", "과목", "center") # 여기 과목 자리에 현재 시각 과목 넣기, 쉬는시간에는 다음 과목 보여주기
 
 #progressbar.set( 0부터 1까지의 실수) -> 진행바 진행 설정 -> 수업시간에는 1분에 1/60만큼, 쉬는시간에는 1분에 1/10만큼 움직여야함 -> 여기 라인에 progressbar.set() 넣어면 됨
-#
+
 
 #급식
 text_meal = customtkinter.CTkTextbox(tabView.tab("Meal"), width=400, height=100, font=my_font)

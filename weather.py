@@ -13,7 +13,8 @@ class Weather:
         self.state = self.get_weather_state
         self.temperature = self.get_weather_temperature
     
-    def get_weather_state(self):
+    def get_weasther_state(self):
         return self.state
     
-    def get_weather_temperature(self)
+    def get_weather_temperature(self):
+        return self.temperature
